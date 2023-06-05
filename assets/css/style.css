@@ -14,14 +14,13 @@ html {
 }
 
 body {
-  /* background: url(/assets/image/wapper_2.jpg) no-repeat; */
+  background: url(./assets/image/wapper_2.jpg) no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* background-color: rgba(0, 0, 0, 0.6); */
 }
-.background {
+/* .background {
   position: fixed;
   top: 0;
   right: 0;
@@ -31,7 +30,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
+} */
 
 .header {
   padding: 2rem 10rem;
