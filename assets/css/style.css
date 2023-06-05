@@ -12,15 +12,7 @@
 html {
   font-size: 62.5%;
 }
-
-body {
-  background: url(./assets/image/wapper_2.jpg) no-repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-/* .background {
+.background {
   position: fixed;
   top: 0;
   right: 0;
@@ -30,7 +22,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-} */
+}
 
 .header {
   padding: 2rem 10rem;
