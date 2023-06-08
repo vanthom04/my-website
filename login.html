@@ -9,10 +9,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/assets/css/login_register.css" />
     <title>Sign In</title>
   </head>
   <body>
+    <!-- Background -->
+    <div
+      class="background"
+      style="background-image: url(./assets/image/bg_login.jpg)"
+    ></div>
+    <!-- Form Login -->
     <div class="form-box">
       <h1 class="heading">Sign In</h1>
       <form action="#">
@@ -48,9 +54,20 @@
             Other sing-in methods
           </p>
           <div class="social-buttons">
-            <a href="" class="google"><i class="bi bi-google"></i></a>
-            <a href="" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="" class="github"><i class="bi bi-github"></i></a>
+            <a href="https://google.com" class="google">
+              <!-- <i class="bi bi-google"></i> -->
+              <img
+                src="./assets/image/google.png"
+                style="width: 6rem; height: 6rem"
+              />
+            </a>
+            <a href="https://facebook.com" class="facebook">
+              <!-- <i class="bi bi-facebook"></i> -->
+              <img
+                src="./assets/image/facebook.png"
+                style="width: 5rem; height: 5rem"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -63,29 +80,48 @@
       const loginLink = document.querySelector(".login-link");
       const login = document.querySelector(".login");
       const register = document.querySelector(".register");
+      const heading = document.querySelector(".form-box .heading");
       const formItemFirstChild = document.querySelectorAll(
         ".form-box .form-item"
       );
-      console.log();
 
+      // Xu ly khi click vao nut dang khi
       registerLink.addEventListener("click", () => {
         formBox.classList.remove("login");
         formBox.classList.add("register");
-        document.querySelector(".form-box .heading").innerText = "Sign Up";
+        heading.innerText = "Sign Up";
         document.title = "Sign Up";
         formItemFirstChild[0].style.display = "block";
         login.style.display = "block";
         register.style.display = "none";
       });
+
+      // Xu ly vao nut dang nhap
       loginLink.addEventListener("click", () => {
         formBox.classList.add("login");
         formBox.classList.remove("register");
-        document.querySelector(".form-box .heading").innerText = "Sign In";
+        heading.innerText = "Sign In";
         document.title = "Sign In";
         formItemFirstChild[0].style.display = "none";
         login.style.display = "none";
         register.style.display = "block";
       });
+
+      // Xu ly du lieu nhap vao o input
+      const input = document.querySelectorAll(".form-item input");
+      // console.log(heading.innerText === "Sign In");
+      let name = input[0];
+      let email = input[1];
+      let password = input[2];
+
+      // console.log(allAcounts[0].name);
+      // if (heading.innerText === "Sign Up") {
+      //   name.addEventListener("change", function () {
+      //     name.value;
+      //   });
+      //   email.addEventListener("change", function () {});
+      //   password.addEventListener("change", function () {});
+      // }
     </script>
   </body>
 </html>

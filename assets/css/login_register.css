@@ -1,0 +1,131 @@
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.form-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 4rem;
+  text-align: center;
+  overflow: hidden;
+  z-index: 99;
+}
+.form-box .heading {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.form-box .form-item:first-child {
+  display: none;
+}
+.form-box .form-item input {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  background-color: #f1f1f1;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  transition: box-shadow 0.2s;
+}
+.form-box .form-item input:focus {
+  box-shadow: 0 0 0 0.2rem #0037ff;
+}
+.form-box .checkbox-forgot,
+.form-box .checkbox-forgot label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.form-box .checkbox-forgot a {
+  color: #0037ff;
+}
+.form-box .checkbox-forgot input[type="checkbox"] {
+  width: 1.6rem;
+  height: 1.6rem;
+  accent-color: #0037ff;
+  margin-right: 0.5rem;
+}
+.form-box form button {
+  background-color: #0037ff;
+  font-weight: 500;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  color: white;
+  font-size: 2rem;
+  margin: 3rem 0;
+  transition: 0.5s;
+}
+.form-box form button:active {
+  scale: 0.95;
+  background-color: draken(#0037ff, 10%);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+.content .login {
+  display: none;
+}
+.content p a {
+  color: #0037ff;
+  font-weight: 600;
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  font-size: 22px;
+  color: white;
+  transition: scale 0.2s;
+}
+
+.social-buttons a:hover {
+  scale: 0.95;
+}
+
+@media (max-width: 901px) {
+  html {
+    font-size: 50%;
+  }
+  .form-box {
+    width: 450px;
+  }
+}
+
+@media (max-width: 541px) {
+  .form-box {
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 45%;
+  }
+  .form-box {
+    width: 250px;
+  }
+}
