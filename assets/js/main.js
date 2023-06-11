@@ -1,15 +1,15 @@
 // =================== Menu ===================
 const navMenu = document.querySelector(".navbar");
-// const menu = document.querySelector(".bi-list");
+const menu = document.querySelector("#menu-icon");
 
-// function hideMenu() {
-//   navMenu.style.right = "-500px";
-//   menu.style.display = "block";
-// }
-// function showMenu() {
-//   navMenu.style.right = "0";
-//   menu.style.display = "none";
-// }
+function hideMenu() {
+  navMenu.style.right = "-500px";
+  menu.style.display = "block";
+}
+function showMenu() {
+  navMenu.style.right = "0";
+  menu.style.display = "none";
+}
 
 // =================== Login link ===================
 const btnLogin = document.querySelector(".btn-login");

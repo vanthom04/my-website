@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+  --bg-color: #000;
+  --text-color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +17,4 @@
 }
 html {
   font-size: 62.5%;
-}
-:root {
-  --bg-color: #000;
-  --text-color: #333;
 }

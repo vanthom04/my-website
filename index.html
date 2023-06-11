@@ -10,28 +10,29 @@
     <title>My Website</title>
 </head>
 <body>
-    <!-- Background -->
-    <div class="background" style="background-image: url(./assets/image/wapper_1.jpg);"></div>
     <!-- Header -->
-    <section id="home">
-        <header class="header">
-            <div class="header-logo"><img src="./assets/image/logo.jpg">Logo</div>
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#miniGame">Mini Game</a>
-                <a href="#contact">Contact</a>
-                <button class="btn-login">Login</button>
-            </nav>
-        </header>
-        <div class="home"></div>
+    <header class="header">
+        <a href="#" class="logo">My Website</a>
+        <nav class="navbar">
+            <i id="time-icon" onclick="hideMenu()" class="bi bi-x"></i>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#miniGame">Mini Game</a>
+            <a href="#contact">Contact</a>
+            <button class="btn-login">Login</button>
+        </nav>
+        <i id="menu-icon" onclick="showMenu()" class="bi bi-list"></i>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        
     </section>
     <!-- About -->
     <section id="about">
 
     </section>
-    
+
     <!-- JavaScript -->
     <script src="./assets/js/main.js"></script>
 </body>
