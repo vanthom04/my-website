@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./assets/css/base.css" />
-  <link rel="stylesheet" href="./assets/css/login_register.css" />
-  <title>Sign In</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/login_register.css" />
+    <title>Sign In</title>
 </head>
-
 <body>
-  <!-- Background -->
-  <div class="background" style="background-image: url(./assets/image/bg_login.jpg)"></div>
-  <!-- Form Login -->
-  <div class="form-box">
-    <h1 class="heading">Sign In</h1>
-    <form action="#">
-      <div class="form-item">
-        <input type="email" placeholder="Email" />
-      </div>
-      <div class="form-item">
-        <input type="password" placeholder="Password" />
-      </div>
-      <div class="checkbox-forgot">
-        <label for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          Remember Me
-        </label>
-        <a href="">Forgot password?</a>
-      </div>
-      <button type="submit">Sign In</button>
-    </form>
-    <div class="content">
-      <p>Do not have an account?<a class="register-link" href="./register.html">Sign Up</a></p>
-      <div class="another-login">
-        <p style="margin-top: 1rem; margin-bottom: 1rem">
-          Other sing-in methods
-        </p>
-        <div class="social-buttons">
-          <a href="https://google.com" class="google">
-            <!-- <i class="bi bi-google"></i> -->
-            <img src="./assets/image/google.png" style="width: 5rem; height: 5rem" />
-          </a>
-          <a href="https://facebook.com" class="facebook">
-            <!-- <i class="bi bi-facebook"></i> -->
-            <img src="./assets/image/facebook.png" style="width: 4rem; height: 4rem">
-          </a>
+    <!-- Background -->
+    <div class="background" style="background-image: url(./assets/image/bg_login.jpg);"></div>
+    <!-- Form login -->
+    <div class="form-box">
+        <h1 class="heading">Sign In</h1>
+        <form action="#">
+            <div class="form-item">
+                <input type="email" id="email" placeholder="Enter your Email">
+            </div>
+            <div class="form-item">
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="checkbox-forgot">
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" id="sign-in">Sign In</button>
+        </form>
+        <div class="sign-link">
+            <p>Don't have an account? <a href="./register.html">Sign Up</a></p>
         </div>
-      </div>
     </div>
-  </div>
 </body>
-
 </html>

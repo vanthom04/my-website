@@ -13,3 +13,7 @@
 html {
   font-size: 62.5%;
 }
+:root {
+  --bg-color: #000;
+  --text-color: #333;
+}
