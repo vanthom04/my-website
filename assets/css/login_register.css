@@ -30,18 +30,30 @@ body {
     font-weight: 600;
     margin-bottom: 2rem;
 }
+.form-box .form-item {
+    margin-bottom: 2rem;
+}
 .form-box .form-item input {
     width: 100%;
     background-color: #f1f1f1;
     padding: 1.5rem 2.5rem;
     border-radius: 30px;
-    margin-bottom: 2rem;
     color: #333;
     font-size: 1.5rem;
+    margin-bottom: .5rem;
     transition: box-shadow .3s;
 }
 .form-box .form-item input:focus {
     box-shadow: 0 0 0 .2rem #0037ff;
+}
+.form-box .form-item .form-msg {
+    font-size: 1.4rem;
+}
+.form-item.invalid input {
+    box-shadow: 0 0 .5rem red;
+}
+.form-item.invalid .form-msg {
+    color: red;
 }
 .form-box .checkbox-forgot {
     display: flex;
